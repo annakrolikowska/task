@@ -1,3 +1,13 @@
+:root {
+	--grey-dark: #2F2F2F;
+  --grey-medium: #D4DBE0;
+  --grey-light: #F4F7F9;
+  --white: #ffffff;
+  --blue-light:  #35A8E0;
+  --blue-medium: #d5dce1;
+  --blue-dark: #274291;
+}
+
 .title {
   font-size: 36px;
   font-weight: 700;

@@ -1,7 +1,7 @@
 .about {
   min-height: 1095px;
   padding: 60px;
-  color: #2F2F2F;
+  color: var(--grey-dark);
   margin: 0 auto;;
   justify-content: center;
   align-items: center;
@@ -18,7 +18,7 @@
   background: url(/src/images/glob.png) no-repeat center;
   width: 335px;
   height: 335px;
-  border: 4px solid #D5DCE1;
+  border: 4px solid var(--blue-medium);
   border-radius: 50%;
   margin-top: 300px;
   line-height: 1.2rem;
@@ -37,7 +37,7 @@
 .about__gear-container::before {
   content: url(/src/images/gear.png);
   position: absolute;
-  border: 2px solid #D5DCE1;
+  border: 2px solid var(--blue-medium);
   border-radius: 50%;
   padding: 70px;
   animation: rotation 25s linear infinite;
@@ -48,7 +48,7 @@
 }
 
 .about__text {
-  color: white;
+  color: var(--white);
   text-transform: uppercase;
   font-weight: 500;
 }
@@ -59,11 +59,11 @@
 }
 
 .about__icon {
-    background-color: #F4F7F9;
+    background-color: var(--grey-light);;
     width: 80px;
     height: 80px;
     border-radius: 50%;
-    border: 4px solid #D4DBE0;
+    border: 4px solid var(--grey-medium);
     outline: 4px solid transparent;
     transition: 0.3s;
     padding: 3px;
@@ -73,13 +73,13 @@
   width: 80px;
   height: 80px;
   border-radius: 50%;
-  outline: 4px solid #35a8E0;
+  outline: 4px solid var(--blue-light);
   border: 4px solid transparent;
   padding: 0px;
 }
 
 .about__description {
-  color: #2F2F2F;
+  color: var(--grey-dark);
   font-weight: 600;
 }
 
@@ -105,14 +105,14 @@
   .about__icon {
     width: 60px;
     height: 60px;
-    border: 3px solid #D4DBE0;
+    border: 3px solid var(--grey-medium);
     outline: 3px solid transparent;
   }
 
   .about__icon:hover {
     width: 60px;
     height: 60px;
-    outline: 3px solid #35a8E0;
+    outline: 3px solid var(--blue-light);
     border: 3px solid transparent;
   }
 
@@ -187,7 +187,7 @@
 
 .about__text--mobile {
   display: block;
-  color: #274291;
+  color: var(--blue-dark);
   font-size: 20px;
   font-weight: 600;
   margin: 20px 0;
