@@ -27,7 +27,7 @@ function AboutItem(props){
 
     return(
         <li className="about__item" style={{transform: `rotate(${angle}deg)`}}>
-              <a style={{transform: `rotate(${-angle}deg)`}} href="/" className={"about__link link".concat(" ", linkElement)}>
+              <a style={{transform: `rotate(${-angle}deg)`}} href="#about" className={"about__link link".concat(" ", linkElement)}>
                 <div className={"about__icon-container".concat(" ", iconElement)}>
                     <img className="about__icon" alt="icon" src={require('../images/'+props.image+'.png')}/>
                 </div>

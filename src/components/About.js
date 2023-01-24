@@ -6,7 +6,7 @@ export default class Form extends React.Component {
     
     render() {
         return (
-            <section className="about">
+            <section id="about" className="about">
                 <h2 className="about__title title">Obszary naszych kompetencji</h2>
                 <p className="about__paragraph description">Pomagamy uczyć się na błędach innych. Wspieramy i rekomendujemy wartościowe rozwiązania biznesowe.</p>
                 <div className="about__gear-container">
