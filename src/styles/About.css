@@ -1,197 +1,202 @@
 .about {
-    min-height: 1160px;
-    padding: 60px;
-    color: #2F2F2F;
-    margin: 0 auto;;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+  min-height: 1095px;
+  padding: 60px;
+  color: #2F2F2F;
+  margin: 0 auto;;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
-  
-  .about__gear-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; 
-    margin: 0 auto; 
-    position: relative;
-    background: url(/src/images/glob.png) no-repeat center;
-    width: 335px;
-    height: 335px;;
-    border: 4px solid #D5DCE1;
-    border-radius: 50%;
-    margin-top: 300px;
-    line-height: 1.2rem;
+
+.about__gear-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+  margin: 0 auto; 
+  position: relative;
+  background: url(/src/images/glob.png) no-repeat center;
+  width: 335px;
+  height: 335px;
+  border: 4px solid #D5DCE1;
+  border-radius: 50%;
+  margin-top: 300px;
+  line-height: 1.2rem;
 }
-  
-  
-  @keyframes rotation {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(359deg);
-    }
+
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
 }
-  
-  .about__gear-container::before {
-    content: url(/src/images/gear.png);
-    position: absolute;
-    border: 2px solid #D5DCE1;
-    border-radius: 50%;
-    padding: 70px;
-    animation: rotation 25s linear infinite;
+
+.about__gear-container::before {
+  content: url(/src/images/gear.png);
+  position: absolute;
+  border: 2px solid #D5DCE1;
+  border-radius: 50%;
+  padding: 70px;
+  animation: rotation 25s linear infinite;
 }
-  
-  .about__text--mobile {
-    display: none;
+
+.about__text--mobile {
+  display: none;
 }
-  
-  .about__text {
-    color: white;
-    text-transform: uppercase;
-    font-weight: 500;
+
+.about__text {
+  color: white;
+  text-transform: uppercase;
+  font-weight: 500;
 }
-  
-  .about__icon-container {
-    min-width: 80px;
-    min-height: 80px;
+
+.about__icon-container {
+  min-width: 80px;
+  min-height: 80px;
 }
-  
-  .about__icon {
-      background-color: #F4F7F9;
-      width: 80px;
-      height: 80px;
-      border-radius: 50%;
-      border: 4px solid #D4DBE0;
-      outline: 4px solid transparent;
-      transition: 0.3s;
-      padding: 3px;
-}
-  
-  .about__icon:hover {
+
+.about__icon {
+    background-color: #F4F7F9;
     width: 80px;
     height: 80px;
     border-radius: 50%;
-    outline: 4px solid #35a8E0;
-    border: 4px solid transparent;
-    padding: 0px;
+    border: 4px solid #D4DBE0;
+    outline: 4px solid transparent;
+    transition: 0.3s;
+    padding: 3px;
 }
-  
-  .about__description {
-    color: #2F2F2F;
-    font-weight: 600;
-}
-  
-  @media screen and (max-width: 1024px) {
-  
-    .about__icon-container {
-      min-width: 60px;
-    } 
-  
-    .about__text {
-      font-size: 14px;
-    }
 
-    .about__icon-container {
-      min-width: 60px;
-      min-height: 60px;;
-    }
-  
-    .about__icon {
-      width: 60px;
-      height: 60px;
-      border: 3px solid #D4DBE0;
-      outline: 3px solid transparent;
-    }
-  
-    .about__icon:hover {
-      width: 60px;
-      height: 60px;
-      outline: 3px solid #35a8E0;
-      border: 3px solid transparent;
-    }
-  
-    .about__gear-container {
-      background: url(/src/images/glob-small.png) no-repeat center;
-      width: 300px;
-      height: 300px;;
-    }
-    
-    .about__description {
-      font-size: 14px;
-    }
-    
-    .about__gear-container::before {
-      content: url(/src/images/gear-small.png);
-      position: absolute;
-      padding: 50px;
-    }
+.about__icon:hover {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  outline: 4px solid #35a8E0;
+  border: 4px solid transparent;
+  padding: 0px;
 }
-  
-  
-@media screen and (max-width: 767px) {
-  
+
+.about__description {
+  color: #2F2F2F;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 1024px) {
+
   .about {
-    padding: 40px;
-  }
-
-  .about__description {
-    font-size: 17px;
-    line-height: 22px;
-  }
-
-  .about__gear-container {
-    border: none;
-    width: 100%;
-    height: auto;
-    margin-top: 0px;
-    display: block;
-    background: none;
-  }
-
-  .about__gear-container::before {
-    opacity: 0.3;
-    position:fixed;
-    border: none;
-    animation: rotation 35s linear infinite;
-  }
-
-  .about__item {
-    padding: 20px 0;
-  }
-
-  .about__icon {
-    width: 80px;
-    height: 80px;
-  }
-
-  .about__icon:hover {
-    width: 80px;
-    height: 80px;
-  }
-
-  .about__link {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    width: 100%;
-    text-align: left;
-    justify-content: left;  
-  }
-  
-  .about__text--mobile {
-    display: block;
-    color: #274291;
-    font-size: 20px;
-    font-weight: 600;
-    margin: 20px 0;
-    text-transform: uppercase;
+    min-height: 1035px;
   }
 
   .about__icon-container {
-    min-width: 80px;
-    margin-right: 10px;
+    min-width: 60px;
+  } 
+
+  .about__text {
+    font-size: 14px;
   }
+
+  .about__icon-container {
+    min-width: 60px;
+    min-height: 60px;;
+  }
+
+  .about__icon {
+    width: 60px;
+    height: 60px;
+    border: 3px solid #D4DBE0;
+    outline: 3px solid transparent;
+  }
+
+  .about__icon:hover {
+    width: 60px;
+    height: 60px;
+    outline: 3px solid #35a8E0;
+    border: 3px solid transparent;
+  }
+
+  .about__gear-container {
+    background: url(/src/images/glob-small.png) no-repeat center;
+    width: 300px;
+    height: 300px;
+    margin-top: 275px; 
+  }
+  
+  .about__description {
+    font-size: 14px;
+  }
+  
+  .about__gear-container::before {
+    content: url(/src/images/gear-small.png);
+    position: absolute;
+    padding: 50px;
+  }
+}
+
+
+@media screen and (max-width: 767px) {
+
+.about {
+  padding: 40px;
+}
+
+.about__description {
+  font-size: 17px;
+  line-height: 22px;
+}
+
+.about__gear-container {
+  border: none;
+  width: 100%;
+  height: auto;
+  margin-top: 0px;
+  display: block;
+  background: none;
+}
+
+.about__gear-container::before {
+  opacity: 0.3;
+  position:fixed;
+  border: none;
+  animation: rotation 35s linear infinite;
+}
+
+.about__item {
+  padding: 20px 0;
+}
+
+.about__icon {
+  width: 80px;
+  height: 80px;
+}
+
+.about__icon:hover {
+  width: 80px;
+  height: 80px;
+}
+
+.about__link {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  text-align: left;
+  justify-content: left;  
+}
+
+.about__text--mobile {
+  display: block;
+  color: #274291;
+  font-size: 20px;
+  font-weight: 600;
+  margin: 20px 0;
+  text-transform: uppercase;
+}
+
+.about__icon-container {
+  min-width: 80px;
+  margin-right: 10px;
+}
 
 }
