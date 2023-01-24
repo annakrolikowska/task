@@ -44,14 +44,7 @@
     .about__description {
         grid-area: description;
         left: auto;
-    }
-
-    .about__description--top, .about__description--bottom {
         text-align: center;
-    }
-
-    .about__description--left {
-        text-align: right;
     }
 
     .about__icon-container{
