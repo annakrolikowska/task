@@ -1,0 +1,147 @@
+.contact{
+    min-height: 630px;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+    text-align: center;
+    margin: 0 auto;
+    color: white;
+    padding-top: 60px;
+
+    background: url("/src/images/contact-background.png") center no-repeat #274291;
+    background-size: contain;
+    overflow: hidden;
+}
+
+.contact__span {
+    font-weight: 600;
+}
+
+
+.contact__form {
+    padding: 40px 0;
+}
+
+.form__link {
+    color: #35A8E0;
+    margin: 0 2px;
+    transition: 0.3s;
+    border: 1px solid transparent;
+}
+
+.form__link:hover {
+    border-bottom: 1px solid #35A8E0;
+}
+
+.form__inputs__container {
+    padding: 0 15%;
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.form__item::placeholder, .form__item--select{
+    font-size: 14px;
+    color: gray;
+}
+
+.form__item--select{
+    background: url(../images/arrow.png) no-repeat right white;
+    background-position-x: 98%;
+    background-size: 18px;
+    cursor: pointer;
+    appearance: none;
+}
+
+.form__item {
+    border-radius: 8px;
+    border: 3px solid transparent;
+    transition: 0.3s;
+    padding: 15px;
+}
+
+.form__item:hover{
+    border: 3px solid #35a8E0;
+}
+
+.form__item:focus-visible{
+    outline: 3px solid #35a8E0;
+}
+
+.form__item--text {
+    height: 100px;
+    grid-column: 1/4;
+}
+
+.form__item--checkbox {
+    margin-right: 8px;
+}
+
+.form__checbox__container {
+    padding: 25px 0 30px;
+    width: 100%;
+}
+
+.form__checbox__container label {
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+}
+
+
+.form__item--button {
+    background-color: #35a8E0;
+    text-transform: uppercase;
+    border:transparent; 
+    border-radius: 5px;
+    padding: 18px 50px 18px 50px;
+    margin: 0 auto;
+    color: white;
+    transition: 0.3s;
+}
+
+.form__item--button:hover {
+    padding: 22px 60px 22px 60px;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+  
+@media screen and (max-width: 1024px) {
+
+    .form__inputs__container {
+        padding: 0 10%;
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .form__item--text {
+        grid-column: 1/3;
+    }
+}
+    
+@media screen and (max-width: 767px) {
+
+    .contact {
+        position: absolute;
+    }
+
+    .contact__text--description {
+        padding: 20px 0 20px 0;
+    }
+
+    .contact__form {
+        padding: 20px 20px;
+    }
+
+    .form__inputs__container {
+        padding: 0 10%;
+        grid-template-columns: 1fr;
+    }
+
+    .form__item--text {
+        grid-column: 1;
+    }
+    .form__checbox__container label {
+        display: block;
+    }
+
+}
